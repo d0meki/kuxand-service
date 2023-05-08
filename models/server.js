@@ -12,7 +12,7 @@ class Server {
 
         this.routes();
     }
-
+    
     middlewares(){
         //CORS
          // this.app.use(cors())
