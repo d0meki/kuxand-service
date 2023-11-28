@@ -74,7 +74,6 @@ const crearCaraPost = (req = request, res = response) => {
 
 const algoPut = (req = request, res = response) => {
     //res.send('hello World');
-
     const id = req.params.id;
 
     res.json({
@@ -105,6 +104,10 @@ const algoPost = (req = request, res = response) => {
 }
 const notificacionesPost = (req, res = response) => {
     const { tittle, body, token, image } = req.body;
+   /*  res.json({
+        msg: 'Se recibio su notificacion',
+        token
+    }) */
     const payload = {
         notification: {
             title: tittle,
@@ -132,7 +135,7 @@ const algoDelete = (req, res = response) => {
     res.json({
         msg: 'delete API - Controlador'
     })
-}
+}   
 module.exports = {
     algoGet,
     algoPost,

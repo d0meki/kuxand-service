@@ -1,5 +1,5 @@
 const  { Router } = require('express');
-const { algoGet,algoPut,algoPost,algoDelete,notificacionesPost,crearCaraPost,subirImagenes} = require('../controllers/luxandController');
+const { algoGet,algoPut,algoPost,algoDelete,notificacionesPost,crearCaraPost,subirImagenes} = require('../controllers/iaController');
 
 
 const router = Router();
